@@ -15,6 +15,12 @@
 
     header {
       padding: 50px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      background: linear-gradient(135deg, #fff3e0, #e1f5fe);
     }
 
     header h1 {
@@ -26,6 +32,11 @@
     header p {
       font-size: 1.2rem;
       color: #555;
+    }
+
+    header img {
+      max-width: 300px;
+      border-radius: 15px;
     }
 
     .btn-main {
@@ -127,10 +138,13 @@
 <body>
 
   <header>
-    <h1>👓 Привет, я Володя 🎉</h1>
-    <p>Твой бесплатный консультант по 1С в Telegram.<br>
-    Отвечаю на вопросы, даю советы и даже шучу 😁</p>
-    <a class="btn-main" href="https://t.me/consultant1s_bot" target="_blank">🚀 Перейти к боту</a>
+    <div>
+      <h1>👓 Привет, я Володя 🎉</h1>
+      <p>Твой бесплатный консультант по 1С в Telegram.<br>
+      Отвечаю на вопросы, даю советы и даже шучу 😁</p>
+      <a class="btn-main" href="https://t.me/consultant1s_bot" target="_blank">🚀 Перейти к боту</a>
+    </div>
+    <img src="https://undraw.co/api/illustrations/random" alt="Иллюстрация 1С">
   </header>
 
   <section>
