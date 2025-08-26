@@ -7,212 +7,119 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #e0f7fa, #ffffff);
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f0f8ff, #e6f7ff);
       color: #333;
-      text-align: center;
     }
-
     header {
-      padding: 50px 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 30px;
-      flex-wrap: wrap;
-      background: linear-gradient(135deg, #fff3e0, #e1f5fe);
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #ffffffcc;
+      backdrop-filter: blur(6px);
+      border-bottom: 2px solid #e0e0e0;
     }
-
+    header img {
+      max-width: 220px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      margin-bottom: 1rem;
+    }
     header h1 {
-      font-size: 2.5rem;
-      color: #ff9800;
-      margin-bottom: 10px;
+      font-size: 2.2rem;
+      margin: 0.5rem 0;
     }
-
     header p {
       font-size: 1.2rem;
-      color: #555;
+      margin: 0.5rem 0;
     }
-
-    header img {
-      max-width: 300px;
-      border-radius: 15px;
-    }
-
-    .btn-main {
+    .btn {
       display: inline-block;
-      background: #4caf50;
+      margin-top: 1rem;
+      padding: 12px 24px;
+      background: #00b894;
       color: white;
-      font-size: 1.3rem;
-      padding: 15px 30px;
-      border-radius: 30px;
-      margin-top: 20px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border-radius: 12px;
       text-decoration: none;
       transition: 0.3s;
     }
-
-    .btn-main:hover {
-      background: #45a049;
-      transform: scale(1.05);
+    .btn:hover {
+      background: #019870;
     }
-
     section {
-      padding: 50px 20px;
-      max-width: 1000px;
-      margin: 0 auto;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
     }
-
     h2 {
-      color: #1976d2;
-      margin-bottom: 30px;
+      text-align: center;
+      margin-bottom: 1.5rem;
     }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
+    .share-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin: 1rem 0;
     }
-
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      opacity: 0;
-      transform: translateY(40px);
-      transition: all 0.8s ease-out;
-    }
-
-    .card.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .share-buttons button {
-      margin: 5px;
-      padding: 10px 15px;
-      border: none;
+    .share-buttons a {
+      padding: 10px 16px;
       border-radius: 8px;
-      cursor: pointer;
-      font-size: 1rem;
+      text-decoration: none;
       color: white;
-      opacity: 0;
-      transform: translateY(40px);
-      transition: all 0.8s ease-out;
+      font-weight: bold;
+      transition: 0.3s;
     }
-
-    .share-buttons button.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
     .tg { background: #0088cc; }
     .wa { background: #25d366; }
     .vk { background: #4c75a3; }
     .copy { background: #555; }
-
-    footer {
-      margin-top: 50px;
-      padding: 20px;
-      font-size: 0.9rem;
-      color: #666;
-    }
-
     .qr {
-      margin-top: 20px;
-      opacity: 0;
-      transform: translateY(40px);
-      transition: all 0.8s ease-out;
+      text-align: center;
+      margin-top: 1.5rem;
     }
-
-    .qr.visible {
-      opacity: 1;
-      transform: translateY(0);
+    .reviews {
+      margin-top: 2rem;
     }
-
-    img.qr-img {
-      max-width: 150px;
+    .review {
+      background: #f7faff;
+      border-left: 4px solid #00b894;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <div>
-      <h1>👓 Привет, я Володя 🎉</h1>
-      <p>Твой бесплатный консультант по 1С в Telegram.<br>
-      Отвечаю на вопросы, даю советы и даже шучу 😁</p>
-      <a class="btn-main" href="https://t.me/consultant1s_bot" target="_blank">🚀 Перейти к боту</a>
-    </div>
-    <img src="https://undraw.co/api/illustrations/random" alt="Иллюстрация 1С">
+    <img src="A_webpage_in_Russian_provides_information_about_Во.png" alt="Володя консультант по 1С">
+    <h1>👨‍💻 Привет, я Володя 🎉</h1>
+    <p>Я — твой бесплатный консультант по 1С в Telegram.<br>Отвечаю на вопросы, даю советы и даже шучу 😁</p>
+    <a class="btn" href="https://t.me/consultant1s_bot" target="_blank">🚀 Перейти к боту</a>
   </header>
 
   <section>
-    <h2>⚙️ Что умеет Володя</h2>
-    <div class="cards">
-      <div class="card">📂 /config — выбрать конфигурацию 1С</div>
-      <div class="card">❓ /faq — часто задаваемые вопросы</div>
-      <div class="card">📰 /news — новости из мира 1С</div>
-      <div class="card">📚 /advice — полезные советы</div>
-      <div class="card">😂 /joke — шуточки про программистов</div>
-    </div>
-  </section>
-
-  <section>
-    <h2>💡 Почему удобно?</h2>
-    <div class="cards">
-      <div class="card">⚡ Быстрые ответы на вопросы</div>
-      <div class="card">📊 Советы прямо в чате Telegram</div>
-      <div class="card">🤖 Бесплатный и всегда под рукой</div>
-    </div>
-  </section>
-
-  <section>
-    <h2>💬 Отзывы пользователей</h2>
-    <div class="cards">
-      <div class="card">«Очень удобно! Больше не ищу, где закрыть месяц — Володя сразу отвечает 👌» — Анна, бухгалтер</div>
-      <div class="card">«Теперь коллеги не бегают ко мне с вопросами — скидываю им Володю» — Илья, айтишник</div>
-    </div>
-  </section>
-
-  <section>
-    <h2>📢 Поделись с коллегами</h2>
+    <h2>📢 Поделись Володей с коллегами</h2>
     <div class="share-buttons">
-      <button class="tg">Telegram</button>
-      <button class="wa">WhatsApp</button>
-      <button class="vk">VK</button>
-      <button class="copy">Копировать ссылку</button>
+      <a class="tg" href="https://t.me/share/url?url=https://t.me/consultant1s_bot" target="_blank">Telegram</a>
+      <a class="wa" href="https://wa.me/?text=Попробуй%20бота%20Володю%20для%201С:%20https://t.me/consultant1s_bot" target="_blank">WhatsApp</a>
+      <a class="vk" href="https://vk.com/share.php?url=https://t.me/consultant1s_bot" target="_blank">VK</a>
+      <a class="copy" href="#" onclick="navigator.clipboard.writeText('https://t.me/consultant1s_bot');alert('Ссылка скопирована!');return false;">Копировать ссылку</a>
     </div>
     <div class="qr">
       <p>Или отсканируй QR-код:</p>
-      <img class="qr-img" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://t.me/consultant1s_bot" alt="QR код">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://t.me/consultant1s_bot" alt="QR code">
     </div>
   </section>
 
-  <footer>
-    Сделано с ❤️ для бухгалтеров и айтишников
-  </footer>
-
-  <script>
-    // Анимация появления блоков при скролле
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.2 });
-
-    document.querySelectorAll('.card, .share-buttons button, .qr').forEach(el => {
-      observer.observe(el);
-    });
-
-    // Кнопки поделиться
-    document.querySelector('.tg').onclick = () => window.open('https://t.me/share/url?url=https://t.me/consultant1s_bot');
-    document.querySelector('.wa').onclick = () => window.open('https://api.whatsapp.com/send?text=Смотри, нашёл крутого бота для 1С: https://t.me/consultant1s_bot');
-    document.querySelector('.vk').onclick = () => window.open('https://vk.com/share.php?url=https://t.me/consultant1s_bot');
-    document.querySelector('.copy').onclick = () => navigator.clipboard.writeText('https://t.me/consultant1s_bot');
-  </script>
-
+  <section class="reviews">
+    <h2>💬 Отзывы пользователей</h2>
+    <div class="review">«Очень удобно! Больше не ищу, где закрыть месяц — Володя сразу отвечает 💡» — Анна, бухгалтер</div>
+    <div class="review">«Теперь сотрудники меньше дергают меня с мелочами. Володя реально помогает 👌» — Иван, айтишник</div>
+    <div class="review">«Сначала не верила, что бот может заменить консультанта, но оказалось, что это спасение 🤯» — Мария, главный бухгалтер</div>
+  </section>
 </body>
 </html>
