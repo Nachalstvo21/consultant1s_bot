@@ -4,118 +4,93 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Володя — консультант по 1С</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Володя — бесплатный Telegram-бот-консультант по 1С. Отвечает на вопросы, подсказывает, даёт советы.">
+  <meta name="keywords" content="1С, консультант, бот 1С, бухгалтерия, Володя бот, Telegram бот 1С">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Володя — консультант по 1С">
+  <meta property="og:description" content="Бот, который помогает в 1С прямо в Telegram.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nachalstvo21.github.io/consultant1s_bot/">
+  <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/4/49/1C_Company_logo.png">
+
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f5f5f5;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background: #ffcc00;
-      color: #000;
-      padding: 50px 20px;
+      font-family: "Segoe UI", Arial, sans-serif;
       text-align: center;
-    }
-    header h1 {
-      font-size: 2.5em;
+      padding: 40px;
+      background: #f7f7f7;
+      color: #333;
     }
     .container {
-      width: 90%;
-      max-width: 1000px;
-      margin: 40px auto;
-      background: white;
+      background: #fff;
       padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 16px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
     }
-    h2 {
-      margin-top: 0;
-      color: #444;
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
     }
-    ul {
-      list-style: none;
-      padding: 0;
+    h1 img {
+      width: 40px;
+      vertical-align: middle;
+      margin-right: 8px;
     }
-    ul li {
-      margin: 10px 0;
-      padding-left: 1.5em;
-      position: relative;
-    }
-    ul li::before {
-      content: "⚡";
-      position: absolute;
-      left: 0;
-    }
-    .cta {
-      text-align: center;
-      margin: 40px 0;
+    p {
+      font-size: 18px;
+      margin: 15px 0;
     }
     .btn {
       display: inline-block;
-      padding: 15px 25px;
-      font-size: 18px;
-      border-radius: 8px;
-      background: #0088cc;
-      color: white;
+      padding: 14px 24px;
+      margin: 20px 0;
+      background: #2a9d8f;
+      color: #fff;
       text-decoration: none;
-      transition: 0.3s;
+      font-size: 20px;
+      border-radius: 10px;
+      transition: background 0.3s;
     }
     .btn:hover {
-      background: #006699;
+      background: #21867a;
+    }
+    .qr {
+      margin-top: 25px;
+    }
+    .qr img {
+      width: 160px;
     }
     footer {
-      text-align: center;
-      padding: 20px;
-      background: #222;
-      color: #aaa;
+      margin-top: 30px;
       font-size: 14px;
+      color: #888;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>🤖 Володя — твой консультант по 1С</h1>
-    <p>Отвечает на вопросы, подсказывает, шутит 😎</p>
-    <a class="btn" href="https://t.me/consultant1s_bot" target="_blank">🚀 Запустить в Telegram</a>
-  </header>
-
   <div class="container">
-    <h2>Что умеет Володя?</h2>
-    <ul>
-      <li>/config — выбрать конфигурацию 1С</li>
-      <li>/faq — часто задаваемые вопросы</li>
-      <li>/news — свежие новости 1С</li>
-      <li>/advice — полезные советы</li>
-      <li>/joke — шуточки про программистов</li>
-      <li>💬 Просто задай вопрос — Володя найдёт ответ!</li>
-    </ul>
-  </div>
+    <h1>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/1C_Company_logo.png" alt="1С">
+      Привет, я Володя 🤓🎉
+    </h1>
+    <p>Я — твой бесплатный консультант по 1С в Telegram.</p>
+    <p>Отвечаю на вопросы, даю советы и даже шучу 😉</p>
 
-  <div class="container">
-    <h2>Почему это удобно?</h2>
-    <ul>
-      <li>⚡ Экономит до 2 часов в день</li>
-      <li>📚 Подсказывает простыми словами</li>
-      <li>⏰ Доступен 24/7</li>
-      <li>💸 Бесплатный доступ</li>
-    </ul>
-  </div>
+    <a href="https://t.me/consultant1s_bot" class="btn">🚀 Перейти к боту</a>
 
-  <div class="container">
-    <h2>Отзывы</h2>
-    <p>💬 «Закрыла месяц в 1С за 10 минут — спасибо Володи!» — Ольга, бухгалтер</p>
-    <p>💬 «Подсказал, как найти отчёт — даже техподдержку не ждал» — Игорь, айтишник</p>
-  </div>
-
-  <div class="cta">
-    <a class="btn" href="https://t.me/имя_твоего_бота" target="_blank">👉 Запустить Володю</a>
+    <div class="qr">
+      <p>Или отсканируй QR-код:</p>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://t.me/consultant1s_bot" alt="QR Володя бот">
+    </div>
   </div>
 
   <footer>
-    © 2025 Володя — консультант по 1С | Сделано с 💛
+    © 2025 Володя — консультант по 1С | Сделано с ❤️
   </footer>
 </body>
-
 </html>
