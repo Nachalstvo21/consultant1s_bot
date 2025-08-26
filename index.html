@@ -23,18 +23,18 @@
       padding: 40px;
       background: #f7f7f7;
       color: #333;
+      line-height: 1.6;
     }
     .container {
       background: #fff;
       padding: 30px;
       border-radius: 16px;
-      max-width: 600px;
+      max-width: 800px;
       margin: auto;
       box-shadow: 0 6px 16px rgba(0,0,0,0.1);
     }
-    h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
+    h1, h2 {
+      margin-bottom: 15px;
     }
     h1 img {
       width: 40px;
@@ -65,6 +65,39 @@
     .qr img {
       width: 160px;
     }
+    .section {
+      margin-top: 40px;
+      text-align: left;
+    }
+    .review {
+      background: #f0f9f8;
+      padding: 15px;
+      border-radius: 12px;
+      margin: 10px 0;
+      font-style: italic;
+    }
+    .faq-item {
+      margin: 15px 0;
+    }
+    .share {
+      margin-top: 30px;
+    }
+    .share a {
+      display: inline-block;
+      margin: 5px;
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-size: 16px;
+      color: #fff;
+      text-decoration: none;
+    }
+    .tg { background: #0088cc; }
+    .wa { background: #25d366; }
+    .vk { background: #4c75a3; }
+    .copy {
+      background: #6c757d;
+      cursor: pointer;
+    }
     footer {
       margin-top: 30px;
       font-size: 14px;
@@ -83,14 +116,46 @@
 
     <a href="https://t.me/consultant1s_bot" class="btn">🚀 Перейти к боту</a>
 
+    <!-- Поделиться -->
+    <div class="share">
+      <p><b>📢 Поделись Володей с коллегами:</b></p>
+      <a href="https://t.me/share/url?url=https://t.me/consultant1s_bot&text=Попробуй%20бота%20Володя%20для%201С!" class="tg">Telegram</a>
+      <a href="https://api.whatsapp.com/send?text=Попробуй%20бота%20Володя%20для%201С!%20https://t.me/consultant1s_bot" class="wa">WhatsApp</a>
+      <a href="https://vk.com/share.php?url=https://t.me/consultant1s_bot&title=Бот%20Володя%20для%201С" class="vk">VK</a>
+      <a class="copy" onclick="copyLink()">📋 Копировать ссылку</a>
+    </div>
+
     <div class="qr">
       <p>Или отсканируй QR-код:</p>
       <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://t.me/consultant1s_bot" alt="QR Володя бот">
+    </div>
+
+    <!-- Отзывы -->
+    <div class="section">
+      <h2>💬 Отзывы пользователей</h2>
+      <div class="review">«Очень удобно! Больше не ищу, где закрыть месяц — Володя сразу отвечает 👌» — Анна, бухгалтер</div>
+      <div class="review">«Нашёл отчёт за 2 минуты, хотя раньше тратил полчаса! 👍» — Сергей, экономист</div>
+      <div class="review">«Даже шутки про 1С есть 😂» — Ирина, айтишник</div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="section">
+      <h2>❓ Частые вопросы</h2>
+      <div class="faq-item"><b>Сколько стоит?</b><br>— Бесплатно! 🎁</div>
+      <div class="faq-item"><b>Какие конфигурации поддерживает?</b><br>— Бухгалтерия, ЗУП, Управление торговлей и другие.</div>
+      <div class="faq-item"><b>Можно ли задать свой вопрос?</b><br>— Конечно! Просто напиши в чате.</div>
     </div>
   </div>
 
   <footer>
     © 2025 Володя — консультант по 1С | Сделано с ❤️
   </footer>
+
+  <script>
+    function copyLink() {
+      navigator.clipboard.writeText("https://t.me/consultant1s_bot");
+      alert("Ссылка скопирована 📋");
+    }
+  </script>
 </body>
 </html>
